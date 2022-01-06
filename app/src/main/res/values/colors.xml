@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="app_name">#5A5A5A</color>
+    <color name="darkname">#353434</color>
+    <color name="club_featured">#403E3E</color>
+    <color name="club_banner">#F1E3BD</color>
+    <color name="club_banner_dark">#EFD690</color>
+    <color name="banner_background">#D1D1D1</color>
+    <color name="recycler_background">#EDE7E7</color>
+    <color name="colorAccent">@color/colorAccent</color>
+
+
 </resources>
