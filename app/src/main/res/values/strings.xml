@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Eventribe</string>
+    <string name="eventribe">Eventribe</string>
+    <string name="logo_name">EventRibe</string>
+    <string name="search_text">search...</string>
+    <string name="name">EventRibe</string>
+    <string name="restaurants">rest</string>
+    <string name="club3">Club3</string>
+    <string name="club1">Club1</string>
+    <string name="club2">Club2</string>
+    <string name="hotel">Hotel</string>
+    <string name="description">description</string>
+    <string name="description1">description</string>
+    <string name="description2">description</string>
+    <string name="description3">description</string>
+    <string name="featured_clubs">All Featured Clubs</string>
+    <string name="deprtmental_club">All Upcomming Events</string>
+    <string name="view_all">View All</string>
+    <string name="categories">Categories</string>
 </resources>
