@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Eventribe</string>
+    <string name="this_is_a_hello_gif">This is a hello GIF</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_is_club_image">This is club Image</string>
+    <string name="this_is_event_image">This is event Image</string>
+    <string name="description">description</string>
+
 </resources>
