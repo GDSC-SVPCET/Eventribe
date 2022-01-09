@@ -31,10 +31,10 @@
             android:text="@string/app_name"
             android:layout_gravity="center_horizontal"
             android:textAllCaps="true"
+            android:fontFamily="@font/brandon_grotesque"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/darkname"
             />
-
         <ProgressBar
             android:id="@+id/SHOW_PROGRESS"
             android:layout_width="wrap_content"

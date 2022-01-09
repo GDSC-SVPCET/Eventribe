@@ -15,7 +15,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
         val gifImage: ImageView = findViewById(R.id.gifImage)
-        Glide.with(this).load(R.drawable.hello).into(gifImage)
+        Glide.with(this).load(R.drawable.peng_logo).into(gifImage)
         Handler().postDelayed({
             // This method will be executed once the timer is over
             // Start your app main activity

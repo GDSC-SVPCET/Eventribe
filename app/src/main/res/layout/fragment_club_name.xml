@@ -22,16 +22,6 @@
             android:contentDescription="@string/description"
             android:src="@drawable/menu_icon" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:background="@color/banner_background"
-            android:contentDescription="@string/description"
-            android:padding="5dp"
-            android:src="@drawable/add_missing_place_icon" />
-
     </RelativeLayout>
 
     <com.google.android.material.card.MaterialCardView

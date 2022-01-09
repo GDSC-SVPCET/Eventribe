@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainPageFragment">
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.example.eventribe.mainPageFragment"
+        android:label="mainPageFragment" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_developerFragment"
+            app:destination="@id/developerFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_mainPageFragment_to_clubNameFragment"
+            app:destination="@id/clubNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/clubNameFragment"
+        android:name="com.example.eventribe.ClubNameFragment"
+        android:label="fragment_club_name"
+        tools:layout="@layout/fragment_club_name" />
+    <fragment
+        android:id="@+id/developerFragment"
+        android:name="com.example.eventribe.DeveloperFragment"
+        android:label="fragment_developer"
+        tools:layout="@layout/fragment_developer" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.eventribe.NewsFragment"
+        android:label="NewsFragment" />
+</navigation>

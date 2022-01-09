@@ -14,6 +14,30 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="this_is_club_image">This is club Image</string>
     <string name="this_is_event_image">This is event Image</string>
+    <string name="eventribe">Eventribe</string>
+    <string name="logo_name">EventRibe</string>
+    <string name="search_text">search...</string>
+    <string name="name">EventRibe</string>
+    <string name="restaurants">Technical Category</string>
+    <string name="club3">Club3</string>
+    <string name="club1">Club1</string>
+    <string name="club2">Club2</string>
+    <string name="hotel">Hotel</string>
     <string name="description">description</string>
+    <string name="description1">description</string>
+    <string name="description2">description</string>
+    <string name="description3">description</string>
+    <string name="featured_clubs">All Featured Clubs</string>
+    <string name="deprtmental_club">All Upcomming Events</string>
+    <string name="view_all">View All</string>
+    <string name="categories">Categories</string>
+    <string name="club_name_1">Google Developers Student Club</string>
+    <string name="first_event">FIRST EVENT</string>
+    <string name="try_contacting_developers">TRY CONTACTING DEVELOPERS!!</string>
+    <string name="developer_tagline">Made With ❤️ by GDSC SVPCET</string>
+    <string name="error_image">Something went wrong image</string>
+    <string name="error_message1">Aaaah! Something went wrong</string>
+    <string name="error_message2">Brace yourself till we get the error fixed.</string>
+    <string name="error_message3">You may also refresh the page or try again later.</string>
 
 </resources>

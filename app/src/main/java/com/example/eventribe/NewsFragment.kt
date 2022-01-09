@@ -17,7 +17,7 @@ import com.example.eventribe.model.News
 class NewsFragment : Fragment() {
 
     private var _binding:FragmentNewsBinding? = null
-    private val binding = _binding!!
+    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,7 +34,7 @@ class NewsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        getNewsData(view.context,binding)
+        getNewsData(view.context)
     }
 
     override fun onDestroyView() {
@@ -42,8 +42,9 @@ class NewsFragment : Fragment() {
         _binding = null
     }
 
-    private fun getNewsData(context:Context, binding:FragmentNewsBinding){
+    private fun getNewsData(context:Context){
         binding.progressCircular.visibility = View.VISIBLE
+        binding.errorPage.visibility = View.GONE
         val newsList:MutableList<News> = mutableListOf()
         val url = "https://tech-news3.p.rapidapi.com/techcrunch"
         val queue = Volley.newRequestQueue(context)
@@ -62,6 +63,8 @@ class NewsFragment : Fragment() {
             },
             { error ->
                 Log.d("error", error.toString())
+                binding.progressCircular.visibility = View.GONE
+                binding.errorPage.visibility = View.VISIBLE
             }) {
             @Throws(AuthFailureError::class)
             override fun getHeaders(): Map<String, String> {
