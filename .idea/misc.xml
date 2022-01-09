@@ -8,6 +8,8 @@
         <entry key="..\:/android projects/Eventribe/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/android projects/Eventribe/app/src/main/res/layout/clubeventlistitem.xml" value="0.1" />
         <entry key="..\:/android projects/Eventribe/app/src/main/res/layout/fragment_club_name.xml" value="0.25" />
+        <entry key="..\:/android projects/Eventribe/app/src/main/res/layout/fragment_news.xml" value="0.27291666666666664" />
+        <entry key="..\:/android projects/Eventribe/app/src/main/res/layout/newsitem.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

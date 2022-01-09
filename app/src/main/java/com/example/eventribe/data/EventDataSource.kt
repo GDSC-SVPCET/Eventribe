@@ -1,7 +1,5 @@
 package com.example.eventribe.data
 
-import android.graphics.drawable.Icon
-import android.media.Image
 import com.example.eventribe.R
 import com.example.eventribe.model.Event
 
