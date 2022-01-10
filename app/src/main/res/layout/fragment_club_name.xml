@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ClubNameFragment">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/action_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,9 +20,23 @@
             android:layout_height="40dp"
             android:layout_centerVertical="true"
             android:contentDescription="@string/description"
-            android:src="@drawable/menu_icon" />
+            android:src="@drawable/menu_icon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
-    </RelativeLayout>
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:fontFamily="@font/brandon_grotesque"
+            android:textColor="@color/darkname"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="0dp"

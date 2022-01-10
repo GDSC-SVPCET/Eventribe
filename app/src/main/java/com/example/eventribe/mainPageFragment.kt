@@ -3,8 +3,10 @@ package com.example.eventribe
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,9 +15,10 @@ import com.gdsc.eventribe.homeadapter.FeaturedAdapter
 import com.gdsc.eventribe.homeadapter.FeaturedhelperClass
 import com.gdsc.eventribe.mvadapter.mvhelperclass
 import com.gdsc.eventribe.mvadapteradapter.mvadapter
+import com.google.android.material.navigation.NavigationView
 import java.util.ArrayList
 
-class mainPageFragment : Fragment() {
+class mainPageFragment : Fragment(){
 
     private var _binding: FragmentMainPageBinding? = null
     private val binding get() = _binding!!
@@ -43,6 +46,15 @@ class mainPageFragment : Fragment() {
         binding.threeLinesImage.setOnClickListener {
             view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToDeveloperFragment())
         }
+        binding.row1col1.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row1col2.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row1col3.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row1col4.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row2col1.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row2col2.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row2col3.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+        binding.row2col4.setOnClickListener { view.findNavController().navigate(mainPageFragmentDirections.actionMainPageFragmentToClubNameFragment()) }
+
     }
 
     override fun onDestroyView() {
@@ -51,13 +63,11 @@ class mainPageFragment : Fragment() {
     }
 
     private fun mostViewedRecycler(context: Context) {
-        binding.upcommingEvent?.setHasFixedSize(true)
-        binding.upcommingEvent?.setLayoutManager(
-            LinearLayoutManager(
-                context,
-                LinearLayoutManager.HORIZONTAL,
-                false
-            )
+        binding.upcommingEvent.setHasFixedSize(true)
+        binding.upcommingEvent.layoutManager = LinearLayoutManager(
+            context,
+            LinearLayoutManager.HORIZONTAL,
+            false
         )
         val mostViewedLocations: ArrayList<mvhelperclass> =
             ArrayList<mvhelperclass>()
@@ -66,12 +76,12 @@ class mainPageFragment : Fragment() {
         mostViewedLocations.add(mvhelperclass(R.drawable.copyrightsymbol, "J."))
         mostViewedLocations.add(mvhelperclass(R.drawable.peng_logo, "Walmart"))
         val adapter = mvadapter(mostViewedLocations)
-        binding.upcommingEvent?.setAdapter(adapter)
+        binding.upcommingEvent.adapter = adapter
     }
 
     private fun featuredRecycler(context: Context) {
-        binding.featuredRecycler?.setHasFixedSize(true)
-        binding.featuredRecycler?.layoutManager = LinearLayoutManager(context,
+        binding.featuredRecycler.setHasFixedSize(true)
+        binding.featuredRecycler.layoutManager = LinearLayoutManager(context,
             LinearLayoutManager.HORIZONTAL,false)
         val featuredLocations: ArrayList<FeaturedhelperClass> = ArrayList<FeaturedhelperClass>()
         featuredLocations.add(
@@ -96,9 +106,6 @@ class mainPageFragment : Fragment() {
             )
         )
         val adapter = FeaturedAdapter(featuredLocations)
-        binding.featuredRecycler?.adapter = adapter
-
-
-
+        binding.featuredRecycler.adapter = adapter
     }
 }

@@ -39,5 +39,9 @@
     <string name="error_message1">Aaaah! Something went wrong</string>
     <string name="error_message2">Brace yourself till we get the error fixed.</string>
     <string name="error_message3">You may also refresh the page or try again later.</string>
-
+    <string name="slogan_name">#never_miss_an_Update</string>
+    <string name="home">Mode</string>
+    <string name="search">Need Help?</string>
+    <string name="all_categories">GDSC SVPCET</string>
+    <string name="meet_our_developers">meet our Developers</string>
 </resources>

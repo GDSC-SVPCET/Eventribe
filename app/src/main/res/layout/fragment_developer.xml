@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".DeveloperFragment">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="84dp"
+        android:layout_height="wrap_content"
         android:background="#E5D9F4"
         android:padding="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -21,26 +21,27 @@
             android:id="@+id/app_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:text="@string/name"
-            android:textColor="@color/black"
-            android:textSize="35sp" />
+            android:fontFamily="@font/brandon_grotesque"
+            android:textColor="@color/darkname"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/app_e"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/app_name"
-            android:layout_centerInParent="true"
-            android:layout_marginEnd="-63dp"
-            android:layout_marginBottom="-9dp"
-            android:layout_toStartOf="@+id/app_name"
-            android:text="meet our"
+            android:text="@string/meet_our_developers"
             android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name"
             android:textSize="15sp" />
 
 
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvContacts"
