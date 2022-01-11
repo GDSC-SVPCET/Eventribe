@@ -22,4 +22,21 @@ Screen Shots:
 ![newspage](https://user-images.githubusercontent.com/66347715/148903165-bd6950e2-0596-4dce-b9c3-ea3ba3d01d2b.jpg)
 ![something](https://user-images.githubusercontent.com/66347715/148903174-482c6e36-eaec-4610-ae5b-05234beab899.jpg)
 
+Functionality & Concepts used :
 
+1. For layout of the App we have used Constraint layout, Relative layout, Linear Layout.
+2. we have 4 pages in the app Main page, Club Page, Tech News Page, Developers Page for this we have used Fragments and for navigation we have used Jetpack Navigation Component.
+3. we have used SplashActivity for the splash screen and MainActivity for laying our my fragments on it. 
+4. We have a tech news section where we fetch news from a tech news api using Volley Library in the app.
+5. We also have a functionality to show error page if internet is not on in the app in the tech news page.
+
+Application Link & Future Scope
+
+Link: https://drive.google.com/file/d/1yCn-j-YgZofcWqBT96obNsv5lxK7kY9k/view?usp=sharing
+
+1. In future we want to make this app 1 stop destination for our college students.
+2. Everything which they want from learning resources to fun activities they will get everything in the app
+3. We will be developing a backend and connecting our app to it.
+4. each club will have its own section and can publish their events in it.
+5. Whenever a new event is published the notification to the user is sent and he/she can save the event to google calender or set an alarm for it.
+6. We will add learning resources and academic resources in this app for the students.
